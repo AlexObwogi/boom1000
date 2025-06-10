@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*custom scrollbar styles*/
+/* for webkit browsers (chrome, safari, edge */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px;
+	height: 8px; /*for horizontal scrollbars */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: #1e293b; /* slate-800 */
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: #475569; /* slate-600*/
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #64748b; /* slate-500 */
+}
+
+
+/* for firefox */
+.custom-scrollbar {
+	scrollbar-width: thin; /* "auto" or "none" */
+	scrollbar-color: #475569 #1e293b; /* thumb and track color */
+}
