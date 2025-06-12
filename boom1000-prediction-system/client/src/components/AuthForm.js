@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // Reusable component for both login and registr forms
 const AuthForm = ({ type, onSubmit, errorMessage, isLoading }) => {
 	const [username, setUsername] = useState('');
-	const [password. setPassword] = useState('');
+	const [password, setPassword] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
