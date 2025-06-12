@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext'; // Auth Context
 import { ArrowRightOnRectangleIcon, UserCircleIcon, ChartBarIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
-	consts { isAuthenticated, setAuthToken, user } = useAuth(); // Get auth state and functions
+	const { isAuthenticated, setAuthToken, user } = useAuth(); // Get auth state and functions
 	const navigate = useNavigate();
 
 	// Handle logout: clear token, redirect to login
