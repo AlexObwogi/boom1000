@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
 		user.password = await bcrypt.hash(password, salt); //Hash the password with the salt
 
 		//Save user to database
-		await.user.save();
+		await user.save();
 
 		//Create JWT payload (data to be stored in the token)
 		const payload = {
