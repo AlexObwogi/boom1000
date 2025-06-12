@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema; // You need to define schema from mongoose
 
 //Define the user schema
-const userSchema = new mongoose.Schema({
+const UserSchema = new Schema({
 	username: {
 		type: String,
 		required: true,
 		unique: true, // Ensure usernames are unique
-		trim: true // Remove whitespace from both ends
+		trim: true, // Remove whitespace from both ends
+		minlength: 3 // Minimun length for username
 	},
 	password: {
 		type: String,
