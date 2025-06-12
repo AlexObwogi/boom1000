@@ -4,7 +4,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import PredictionSystemPage from './pages/PredictionSystemPage';
 import AuthProvider from './context/AuthContext'; // Auth Context Provider
-import protecedRoute from './components/ProtectedRoute'; // For protecting routes
+import protectedRoute from './components/ProtectedRoute'; // For protecting routes
 
 function App() {
 	return (
