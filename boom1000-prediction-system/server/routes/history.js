@@ -22,10 +22,10 @@ router.get('/', auth, async (req, res) => {
 //@desc Add a new prediction history record for the authenticated user
 //@access Private
 router.post('/', auth, async (req, res) => {
-	const { predictedValue, ActualValue, isCorrect, pattern, confidence, predictedRange } = req.body;
+	const { predictedValue, actualValue, isCorrect, pattern, confidence, predictedRange } = req.body;
 
 	//Basci validation (add more as needed)
-	if (typeof predictiveValue === 'undefined' || typeof actuall value === 'undefined' || typeof isCorrect == 'undefined' || !pattern || typeof confidence === 'undefined' || !predictedRange) {
+	if (typeof predictedValue === 'undefined' || typeof actualValue === 'undefined' || typeof isCorrect === 'undefined' || !pattern || typeof confidence === 'undefined' || typeof predictedRange === 'undefined') {
 		return res.status(400).json({msg: 'please provide all required fields for prediction history' });
 	}
 
