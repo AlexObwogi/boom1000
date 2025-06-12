@@ -1,7 +1,7 @@
 require('dotenv').config(); //Load environment variables from .env file
 const express = require('express');
 const http = require('http'); //HTTP module for socket.IO
-const {server} = require('socket.io'); // socket.IO server class
+const {Server} = require('socket.io'); // socket.IO server class
 const conneDB = require('./config/db'); //database connection utility
 const cors = require('cors'); //CORS middleware
 const authRoutes = require('./routes/auth'); //Authentication routes
