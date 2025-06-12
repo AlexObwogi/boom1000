@@ -38,7 +38,7 @@ router.post('/', auth, async (req, res) => {
 		//Save the tick to the database
 		const tick = await newTick.save();
 		res.json(tick); // Respond with the saved tick
-	} catc (err) {
+	} catch (err) {
 		console.error(err.message);
 		res.status(500).send('Server Error');
 	}
