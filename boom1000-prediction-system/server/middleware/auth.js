@@ -15,7 +15,7 @@ module.exports = function (req, res, next) {
 
 			//Attach the user ID from the token payload to the request object
 			//This makes the user ID available in the subsequent route handlers
-			req.user = decode.user;
+			req.user = decoded.user;
 			next(); //Proceed to the next middleware/route handler
 		} catch (err) {
 			res.status(401).json({ msg: 'Token is not valid' });
