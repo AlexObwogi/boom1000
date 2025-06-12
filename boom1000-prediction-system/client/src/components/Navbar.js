@@ -8,9 +8,6 @@ const Navbar = () => {
 	const navigate = useNavigate();
 
 	// Handle logout: clear token, redirect to login
-	const navigate = useNavigate();
-
-	// Handle logout: clear token, redirect to login
 	const handleLogout = () => {
 		setAuthToken(null); // Clear token from state and localStorage
 		navigate('/login'); // Redirect to login page
