@@ -1,5 +1,6 @@
 require('dotenv').config(); //Load environment variables from .env file
 const express = require('express');
+const connectDB = require('./config/db');
 const http = require('http'); //HTTP module for socket.IO
 const {Server} = require('socket.io'); // socket.IO server class
 const conneDB = require('./config/db'); //database connection utility
