@@ -36,7 +36,7 @@ router.post('/', auth, async (req, res) => {
 		});
 
 		//Save the tick to the database
-		/const tick = await newTick.save();
+		const tick = await newTick.save();
 		res.json(tick); // Respond with the saved tick
 	} catc (err) {
 		console.error(err.message);
