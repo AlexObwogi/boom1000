@@ -8,7 +8,7 @@ const TickSchema = new mongoose.Schema({
 		required: true
 	},
 	value: {
-		type: double,
+		type: Number,
 		required: true,
 		min: 0 //Tick values should be non-negative
 	},
