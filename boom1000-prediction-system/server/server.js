@@ -4,9 +4,9 @@ const express = require('express');
 const http = require('http'); // HTTP module for Socket.IO
 const { Server } = require('socket.io'); // Socket.IO server class
 const cors = require('cors'); // CORS middleware
-const path = require)('path');
+const path = require('path');
 // Load environment variables as early as possible
-dotenv.config({ path; path.resolve(--dirname, '.env') });
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 // Correctly import the database connection utility
 const connectDB = require('./config/db');
